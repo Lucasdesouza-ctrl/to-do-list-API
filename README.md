@@ -31,7 +31,7 @@ API RESTful para gerenciamento de tarefas (ToDo List) construída em Java com Sp
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/Lucasdesouza-ctrl/to-do-list-API
 cd seu-repositorio
 ```
 2. Edite application.properties com suas configurações de banco de dados:
