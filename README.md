@@ -26,6 +26,20 @@ API RESTful para gerenciamento de tarefas (ToDo List) construída em Java com Sp
 
 ---
 
+## 📌 Endpoints da API
+
+| Método | Rota                         | Descrição                                                |
+|--------|------------------------------|----------------------------------------------------------|
+| POST   | `/tasks`                     | Criar uma nova tarefa                                    |
+| GET    | `/tasks`                     | Listar todas as tarefas                                  |
+| GET    | `/tasks/{id}`                | Buscar uma tarefa pelo ID                                |
+| PUT    | `/tasks/{id}`                | Atualizar os dados de uma tarefa                         |
+| DELETE | `/tasks/{id}`                | Deletar uma tarefa                                       |
+| PUT    | `/tasks/{id}/status`         | Atualizar apenas o status da tarefa                      |
+| GET    | `/tasks/status/{status}`     | Listar tarefas por status (`PENDING`, `COMPLETED`, `CANCELED`) |
+
+---
+
 ## ⚙️ Como rodar localmente
 
 1. Clone o repositório:
