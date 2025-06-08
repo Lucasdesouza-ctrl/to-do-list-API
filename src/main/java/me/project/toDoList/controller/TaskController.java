@@ -37,7 +37,7 @@ public class TaskController {
         return ResponseEntity.ok(dtos);
     }
 
-    @GetMapping("/{status}")
+    @GetMapping("/status/{status}")
     public  ResponseEntity<List<TaskResponseDTO>> findByStatus (@PathVariable StatusEnum status ){
         List<TaskEntity> entities = service.findByStatus((status));
          List<TaskResponseDTO> dto = entities.stream()
@@ -46,7 +46,7 @@ public class TaskController {
          return ResponseEntity.ok(dto);
     }
 
-    @GetMapping("/status/{status}")
+    @GetMapping("/{id}")
     public ResponseEntity<TaskResponseDTO> findById(@PathVariable Long id) {
         TaskEntity task = service.findById(id);
         return ResponseEntity.ok(taskMapper.toDTO(task));
